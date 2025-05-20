@@ -225,11 +225,11 @@ fun AccountInfoRow(
             verticalAlignment = Alignment.CenterVertically,
             modifier = Modifier.weight(1f)
         ) {
-            Image( // Use Image instead of Icon
+            Image(
                 painter = painterResource(id = iconId),
                 contentDescription = label,
                 modifier = Modifier.size(20.dp),
-                colorFilter = ColorFilter.tint(Color.Gray) 
+                colorFilter = ColorFilter.tint(Color.Gray)
             )
             Spacer(modifier = Modifier.width(8.dp))
             Text(text = label, color = Color.Gray, fontSize = 14.sp)
